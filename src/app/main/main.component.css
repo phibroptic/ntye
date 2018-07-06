@@ -1,4 +1,5 @@
-@page-left {
+@page {
+  size: 7in 10in;
   border: .5in solid teal;
   border-radius: .125in;
 }
@@ -26,7 +27,9 @@
 }
 
 .page {
-  border: .5in solid teal;
+  width: 7in;
+  height: 8.875in;
+  border: .625in solid teal;
   padding: 5px;
   padding-top: 0px;
   border-radius: .7in;
@@ -116,6 +119,7 @@
   height: .4375in;
   width: .4375in;
   padding-bottom: 0px;
+  margin: 7px;
 }
 
 .guide {
