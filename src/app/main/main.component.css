@@ -1,0 +1,29 @@
+@page-left {
+  border: .5in solid teal;
+}
+.body {
+  text-align: left;
+  column-count: 2;
+}
+
+.guide:before {
+  background-image:url(/assets/compass.png);
+  float:left;
+  background-size: 112.5px 112.5px;
+  display: inline-block;
+  content:"";
+  height: 112.5px;
+  width: 112.5px;
+}
+
+.guide {
+  border: 3px solid lightgreen;
+  background-color: lightgreen;
+  float: clear;
+}
+
+.title {
+  border: 5px solid teal;
+  border-top-width: 0px;
+  font-size: 20pt;
+}
