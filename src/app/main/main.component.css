@@ -8,10 +8,8 @@
   text-align: left;
   height: 7.75in;
   column-count: 2;
-  column-width: 3.125in;
   padding-top: .35in;
   column-gap: .125in;
-  column-fill: auto;
 }
 
 .background {
@@ -23,8 +21,8 @@
   alignment: center;
   width: 3.1in;
   padding-top: 5px;
-  margin-bottom: .25in;
-  line-height: 1.35em;
+  margin-bottom: .2in;
+  line-height: 1.2em;
 }
 
 .page {
@@ -63,7 +61,7 @@
   alignment: center;
   width: 3.2in;
   padding-top: 0px;
-  line-height: 1.35em;
+  line-height: 1.2em;
 }
 
 .descriptive > p {
@@ -92,6 +90,11 @@
   display: block;
   border-top: 2px solid sandybrown;
 }
+
+.read > p:first-child{
+  margin-top: 0em;
+}
+
 .read > p {
   color: black;
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
@@ -100,7 +103,8 @@
   clear: both;
   width: 3in;
   margin: auto;
-  line-height: 1.25em;
+  line-height: 1.2em;
+  margin-top: 1em;
 }
 
 .guide:before {
@@ -120,7 +124,8 @@
   width: 3.2in;
   margin: auto;
   overflow: auto;
-  line-height: 1.35em;
+  line-height: 1.2em;
+  break-inside: avoid;
 }
 
 
