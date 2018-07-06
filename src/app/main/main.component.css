@@ -1,29 +1,147 @@
 @page-left {
   border: .5in solid teal;
+  border-radius: .125in;
 }
+
+
 .body {
   text-align: left;
+  height: 7.75in;
   column-count: 2;
+  column-width: 3.125in;
+  padding-top: .35in;
+  column-gap: .125in;
+  column-fill: auto;
+}
+
+.background {
+  color: teal;
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+  font-family: 'Quicksand', sans-serif;
+  font-size: .875em;
+  margin: auto;
+  alignment: center;
+  width: 3.1in;
+  padding-top: 5px;
+  margin-bottom: .25in;
+  line-height: 1.35em;
+}
+
+.page {
+  border: .5in solid teal;
+  padding: 5px;
+  padding-top: 0px;
+  border-radius: .7in;
+}
+
+.pageback {
+  border: .2px solid white;
+  padding: 5px;
+  padding-top: 0px;
+  -webkit-border-radius: .2px;
+  -moz-border-radius: .2px;
+  border-radius: .2px;
+}
+
+.section {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25em;
+  color: brown;
+  padding-top: .2in;
+  padding-bottom: 0px;
+  margin: auto;
+  alignment: center;
+  width: 3.2in;
+}
+
+.descriptive {
+  color: black;
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+  font-family: 'Quicksand', sans-serif;
+  font-size: .87em;
+  margin: auto;
+  alignment: center;
+  width: 3.2in;
+  padding-top: 0px;
+  line-height: 1.35em;
+}
+
+.descriptive > p {
+  text-indent: 1em;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.read:before {
+  content:"Read Aloud";
+  color: sandybrown;
+  font-size: 1em;
+  width: 3.2in;
+  margin:auto;
+  display: block;
+  border-bottom: 2px solid sandybrown;
+}
+
+.read:after {
+  content:"";
+  font-size: 1em;
+  width: 3.2in;
+  margin:auto;
+  display: block;
+  border-top: 2px solid sandybrown;
+}
+.read > p {
+  color: black;
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+  font-family: 'Quicksand', sans-serif;
+  font-size: .87em;
+  clear: both;
+  width: 3in;
+  margin: auto;
+  line-height: 1.25em;
 }
 
 .guide:before {
-  background-image:url(/assets/compass.png);
+  background-image:url(/assets/guide.png);
   float:left;
-  background-size: 112.5px 112.5px;
+  background-size: .4375in .4375in;
   display: inline-block;
   content:"";
-  height: 112.5px;
-  width: 112.5px;
+  height: .4375in;
+  width: .4375in;
+  padding-bottom: 0px;
 }
 
 .guide {
   border: 3px solid lightgreen;
   background-color: lightgreen;
-  float: clear;
+  width: 3.2in;
+  margin: auto;
+  overflow: auto;
+  line-height: 1.35em;
+}
+
+
+@font-face {
+  font-family: 'KTF-Roadbrush';
+  src:url('/assets/KTF-Roadbrush.ttf.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .title {
-  border: 5px solid teal;
+  border: 2px ridge teal;
+  font-family: 'KTF-Roadbrush';
+  color: teal;
+  font: italic;
   border-top-width: 0px;
-  font-size: 20pt;
+  text-align: center;
+  margin: auto;
+  line-height: .475in;
+  text-transform: uppercase;
+  font-size: 1.75em;
+  width: 4.4375in;
+  height: .475in;
 }
