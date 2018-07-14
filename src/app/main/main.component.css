@@ -4,10 +4,9 @@
   border-radius: .125in;
 }
 
-
 .body {
   text-align: left;
-  height: 7.75in;
+  height: 8.2in;
   column-count: 2;
   padding-top: .35in;
   column-gap: .125in;
@@ -26,12 +25,14 @@
   line-height: 1.2em;
 }
 
-.page {
+.pages {
   width: 7in;
   height: 8.875in;
   border: .625in solid teal;
   padding: 5px;
   padding-top: 0px;
+  page-break-before: always;
+
   border-radius: .7in;
 }
 
@@ -65,6 +66,7 @@
   width: 3.2in;
   padding-top: 0px;
   line-height: 1.2em;
+  break-inside: avoid;
 }
 
 .descriptive > p {
@@ -73,8 +75,12 @@
   padding-bottom: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  break-inside: avoid;
 }
 
+.read {
+  break-inside: avoid;
+}
 .read:before {
   content:"Read Aloud";
   color: sandybrown;
@@ -83,6 +89,7 @@
   margin:auto;
   display: block;
   border-bottom: 2px solid sandybrown;
+  break-inside: avoid;
 }
 
 .read:after {
@@ -102,34 +109,37 @@
   color: black;
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
   font-family: 'Quicksand', sans-serif;
-  font-size: .87em;
+  font-size: .81em;
   clear: both;
   width: 3in;
   margin: auto;
   line-height: 1.2em;
-  margin-top: 1em;
+  margin-top: .7em;
+  break-inside: avoid;
 }
 
 .guide:before {
   background-image:url(/assets/guide.png);
   float:left;
-  background-size: .4375in .4375in;
+  background-size: .4375in .3975in;
   display: inline-block;
   content:"";
-  height: .4375in;
+  height: .3975in;
   width: .4375in;
   padding-bottom: 0px;
   margin: 7px;
 }
 
 .guide {
-  border: 3px solid lightgreen;
+  /*border: 3px solid lightgreen;*/
   background-color: lightgreen;
-  width: 3.2in;
+  font-size: .82em;
+  width: 3.05in;
   margin: auto;
   overflow: auto;
-  line-height: 1.2em;
+  line-height: 1.4em;
   break-inside: avoid;
+  padding: 8px;
 }
 
 
@@ -153,4 +163,76 @@
   font-size: 1.75em;
   width: 4.4375in;
   height: .475in;
+}
+
+.ask:before {
+  background-image:url(/assets/ask.png);
+  float:left;
+  background-size: .4375in .3975in;
+  display: inline-block;
+  content:"";
+  height: .3975in;
+  width: .4375in;
+  padding-bottom: 0px;
+  margin: 7px;
+}
+
+.ask {
+  outline: 3px dotted orange;
+  background-color: peachpuff;
+  font-size: .82em;
+  width: 3.05in;
+  margin: 14px auto 14px  auto;
+  overflow: auto;
+  line-height: 1.4em;
+  break-inside: avoid;
+  padding: 4px;
+}
+
+.give:before {
+  background-image:url(/assets/give.png);
+  float:left;
+  background-size: .4375in .3975in;
+  display: inline-block;
+  content:"";
+  height: .3975in;
+  width: .4375in;
+  padding-bottom: 0px;
+  margin: 7px;
+}
+
+.give {
+  outline: 3px dotted green;
+  background-color: lightgreen;
+  font-size: .82em;
+  width: 3.05in;
+  margin: 14px auto 14px  auto;
+  overflow: auto;
+  line-height: 1.4em;
+  break-inside: avoid;
+  padding: 4px;
+}
+
+.show:before {
+  background-image:url(/assets/show.png);
+  float:left;
+  background-size: .4375in .3875in;
+  display: inline-block;
+  content:"";
+  height: .3875in;
+  width: .4375in;
+  padding-bottom: 0px;
+  margin: 7px;
+}
+
+.show {
+  outline: 3px dotted purple;
+  background-color: mediumpurple;
+  font-size: .82em;
+  width: 3.05in;
+  margin: 14px auto 14px  auto;
+  overflow: auto;
+  line-height: 1.4em;
+  break-inside: avoid;
+  padding: 4px;
 }

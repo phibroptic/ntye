@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { MarkdownComponent } from './markdown/markdown.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { MarkdownComponent } from './markdown/markdown.component';
     MarkdownComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
