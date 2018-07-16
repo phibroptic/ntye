@@ -56,6 +56,17 @@
   width: 3.2in;
 }
 
+.section2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1em;
+  color: teal;
+  padding-top: .2in;
+  padding-bottom: 0px;
+  margin: auto;
+  alignment: center;
+  width: 3.2in;
+}
+
 .descriptive {
   color: black;
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
@@ -133,7 +144,7 @@
 
 .guide {
   /*border: 3px solid lightgreen;*/
-  background-color: lightgreen;
+  background-color: rgba(144, 238, 144,.25);
   font-size: .82em;
   width: 3.05in;
   margin: auto;
@@ -180,7 +191,7 @@
 
 .ask {
   outline: 3px dotted orange;
-  background-color: peachpuff;
+  background-color: rgba(255, 218, 185,.25);
   font-size: .82em;
   width: 3.05in;
   margin: 14px auto 14px  auto;
@@ -204,7 +215,7 @@
 
 .give {
   outline: 3px dotted green;
-  background-color: lightgreen;
+  background-color: rgba(144, 238, 144,.125);
   font-size: .82em;
   width: 3.05in;
   margin: 14px auto 14px  auto;
@@ -217,10 +228,10 @@
 .show:before {
   background-image:url(/assets/show.png);
   float:left;
-  background-size: .4375in .3875in;
+  background-size: .4375in .4375in;
   display: inline-block;
   content:"";
-  height: .3875in;
+  height: .4375in;
   width: .4375in;
   padding-bottom: 0px;
   margin: 7px;
@@ -228,7 +239,7 @@
 
 .show {
   outline: 3px dotted purple;
-  background-color: mediumpurple;
+  background-color: rgba(147, 112, 219, .125);
   font-size: .82em;
   width: 3.05in;
   margin: 14px auto 14px  auto;
@@ -236,4 +247,40 @@
   line-height: 1.4em;
   break-inside: avoid;
   padding: 4px;
+}
+
+.character {
+  outline: 3px dashed dodgerblue;
+  background-color: rgba(100,149,237,.125);
+  font-size: .82em;
+  width: 3.05in;
+  margin: 14px auto 14px  auto;
+  overflow: auto;
+  line-height: 1.4em;
+  break-inside: avoid;
+  padding: 4px;
+}
+
+.character > span {
+  font-weight: bolder;
+}
+
+.tough {
+  font-weight: bolder;
+  color: cornflowerblue;
+}
+
+.smart {
+  font-weight: bolder;
+  color: lightgreen;
+}
+
+.fast {
+  font-weight: bolder;
+  color: red;
+}
+
+.awesome {
+  font-weight: bolder;
+  color: mediumpurple;
 }
