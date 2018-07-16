@@ -80,6 +80,7 @@
 
 .read {
   break-inside: avoid;
+  margin-top: 10px;
 }
 .read:before {
   content:"Read Aloud";
