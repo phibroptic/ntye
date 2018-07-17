@@ -1,8 +1,4 @@
-@page {
-  size: 7in 10in;
-  border: .5in solid teal;
-  border-radius: .125in;
-}
+
 
 .body {
   text-align: left;
@@ -31,9 +27,14 @@
   border: .625in solid teal;
   padding: 5px;
   padding-top: 0px;
-  page-break-before: always;
-
+  page-break-after: always;
   border-radius: .7in;
+  margin: auto;
+  margin-top: 1in;
+}
+
+.pages:last-of-type {
+  page-break-after: unset;
 }
 
 .pageback {
@@ -49,7 +50,7 @@
   font-family: 'Quicksand', sans-serif;
   font-size: 1.25em;
   color: brown;
-  padding-top: .2in;
+  padding-top: .18in;
   padding-bottom: 0px;
   margin: auto;
   alignment: center;
@@ -140,6 +141,7 @@
   width: .4375in;
   padding-bottom: 0px;
   margin: 7px;
+  break-inside: avoid;
 }
 
 .guide {
@@ -152,6 +154,11 @@
   line-height: 1.4em;
   break-inside: avoid;
   padding: 8px;
+}
+
+.guide p {
+  vertical-align: center;
+  margin:0px;
 }
 
 
@@ -177,7 +184,7 @@
   height: .475in;
 }
 
-.ask:before {
+.ask::before {
   background-image:url(/assets/ask.png);
   float:left;
   background-size: .4375in .3975in;
@@ -187,6 +194,7 @@
   width: .4375in;
   padding-bottom: 0px;
   margin: 7px;
+
 }
 
 .ask {
@@ -197,8 +205,14 @@
   margin: 14px auto 14px  auto;
   overflow: auto;
   line-height: 1.4em;
-  break-inside: avoid;
+  break-inside: auto;
   padding: 4px;
+}
+
+.ask p {
+  margin:auto;
+  vertical-align: center;
+
 }
 
 .give:before {
@@ -225,6 +239,11 @@
   padding: 4px;
 }
 
+.give p {
+  vertical-align: center;
+  margin:auto;
+}
+
 .show:before {
   background-image:url(/assets/show.png);
   float:left;
@@ -249,6 +268,11 @@
   padding: 4px;
 }
 
+.show p {
+  margin:auto;
+  vertical-align: center;
+}
+
 .character {
   outline: 3px dashed dodgerblue;
   background-color: rgba(100,149,237,.125);
@@ -261,8 +285,64 @@
   padding: 4px;
 }
 
+
 .character > span {
   font-weight: bolder;
+}
+
+.monster {
+  outline: 3px dashed dodgerblue;
+  background-color: rgba(100,149,237,.1);
+  font-size: .78em;
+  width: 3.05in;
+  margin: 14px auto 14px  auto;
+  overflow: auto;
+  line-height: 1.4em;
+  break-inside: avoid;
+  padding: 4px;
+}
+
+.monster  .name {
+  color: teal;
+  font-size: 1.1em;
+}
+
+.monster  span {
+  font-weight: bolder;
+}
+
+.monster p {
+  margin: 0px;
+  padding-left: 20px;
+}
+
+.monster p:first-letter {
+  margin-left: -20px;
+}
+
+.monster table {
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+
+.monster table,td{
+  border: 3px dashed white;
+}
+
+.monster td:nth-child(1){
+  width: 50px;
+}
+
+.monster td:nth-child(2){
+  width: 200px;
+}
+
+.monster tr:nth-child(odd) {
+  background-color: rgba(100,149,237,.25);
+}
+
+.monster tr:nth-child(even) {
+  background-color: rgba(100,149,237,.125);
 }
 
 .tough {
